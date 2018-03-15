@@ -67,6 +67,7 @@ class Owner
       @pets[key].each do |pet_instance|
         pet_instance.mood = "nervous"
       end
+      @pets[key] = []
     end
   end
   
