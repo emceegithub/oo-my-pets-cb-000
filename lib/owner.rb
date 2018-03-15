@@ -44,4 +44,9 @@ class Owner
     @pets[:dogs] << dog
   end
   
+  def walks_dogs
+    @pets[:dogs].each do |dog_instance|
+      dog_instance.mood = "happy"
+    end
+  end
 end
